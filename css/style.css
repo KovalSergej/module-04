@@ -119,8 +119,9 @@ body {
     margin: 35px 15px 0px 15px;    
 }
 
-.all-posts-list-item:hover {
-    background-color: #1abc9c;
+.all-posts-list-item:hover .product-description {
+    background: linear-gradient(to right,
+    #1abc9c 79%,  #7fd9c7  79%,#7fd9c7 100%);
 }
 
 .all-posts-list-item + .all-posts-list-item {
@@ -176,22 +177,25 @@ body {
 .all-bogs {
     padding: 0px;
     list-style: none;
-    background-color: rgb(122, 230, 240);
 }
 
 .all-bogs-item {
     float: left;
     margin: 35px 15px 0px 15px;
     width: 350px;
-    height: 540px;
 }
 
 .bog-content {
     margin: 15px 0px;
 }
 
-.bog-title {
+.bog-title h2 {
     margin: 15px 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;    
+    color: #626262;
+    font-size: 18px;
+    line-height: 26px;
 }
 
 .bog-title::after {
@@ -205,19 +209,42 @@ body {
 
 .bog-description {
     margin: 0px 0px 20px 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;    
+    color: #626262;
+    font-size: 14px;
+    line-height: 26px;
 }
 
 .read-more-button {
     background-color: #1abc9c;
+    text-decoration: none;
     color: white;
     height: 51px;
     width: 160px;
     margin: 0;
-    text-decoration: none;
     border: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
     border-radius: 3px;
+}
+
+.read-more-button {
+    background-color: #1abc9c;
+    text-decoration: none;
+    color: white;
+    width: 160px;
+    height: 51px;
+    margin: 0;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 51px;
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    
 }
